@@ -1,6 +1,16 @@
 <?php
 /**
- * Email Utility for User Verification
+ * Email Utility for Send Email 
+ * @developer Mukesh Kumar
+ * @version 1.0.0
+ * @since 2026-02-16
+ * @package EmailUtil
+ * @subpackage EmailUtil
+ * @category EmailUtil
+ * @subcategory EmailUtil
+ * @copyright 2026 Mukesh Kumar
+ * @license MIT
+ * @link https://github.com/mkv1992/email_util  
  */
 
 class EmailUtil {
@@ -14,7 +24,22 @@ class EmailUtil {
     }
     
     /**
-     * Send verification email
+     * Send verification email"
+     * @developer Mukesh Kumar
+     * @version 1.0.0
+     * @since 2026-02-16
+     * @package EmailUtil
+     * @subpackage EmailUtil
+     * @category EmailUtil
+     * @subcategory EmailUtil
+     * @copyright 2026 Mukesh Kumar
+     * @license MIT
+     * @link https://github.com/mkv1992/email_util  
+     * @param string $to_email
+     * @param string $to_name
+     * @param string $verification_token
+     * @return array
+    
      */
     public function sendVerificationEmail($to_email, $to_name, $verification_token) {
         try {
@@ -44,6 +69,15 @@ class EmailUtil {
   
         /**
          * Send generic email
+         * @developer Mukesh Kumar
+         * @version 1.0.0
+         * @since 2026-02-16
+         * @package EmailUtil
+         * @subpackage EmailUtil
+         * @category EmailUtil
+         * @subcategory EmailUtil
+         * @copyright 2026 Mukesh Kumar
+         * @license MIT
          */
         private function sendEmail($to_email, $to_name, $subject, $html_body) {
             // Validate email
@@ -59,6 +93,15 @@ class EmailUtil {
      * Send email via SMTP
      * Supports both SSL (port 465) and TLS (port 587)
      * Fixed  and other SMTP services
+     * @developer Mukesh Kumar
+     * @version 1.0.0
+     * @since 2026-02-16
+     * @package EmailUtil
+     * @subpackage EmailUtil
+     * @category EmailUtil
+     * @subcategory EmailUtil
+     * @copyright 2026 Mukesh Kumar
+     * @license MIT
      */
     private function sendViaSMTP($to_email, $to_name, $subject, $html_body) {
         $smtp_host = defined('SMTP_HOST') ? SMTP_HOST : 'smtp.gmail.com';
