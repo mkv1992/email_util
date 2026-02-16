@@ -1,12 +1,22 @@
 <?php
 /**
  * Direct Email Test (CLI friendly)
+ * @developer Mukesh Kumar
+ * @version 1.0.0
+ * @since 2026-02-16
+ * @package EmailUtil
+ * @subpackage EmailUtil
+ * @category EmailUtil
+ * @subcategory EmailUtil
+ * @copyright 2026 Mukesh Kumar
+ * @license MIT
+ * @link https://github.com/mkv1992/email_util  
  */
 
 require_once 'config.php';
 require_once 'email_util.php';
 
-echo "=== Direct Email Send Test ===\n\n";
+echo "=== Direct Email Send Test ===\n\n";  
 
 // Create email utility
 $emailUtil = new EmailUtil();
